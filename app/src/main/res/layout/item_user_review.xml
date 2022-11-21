@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:padding="8dp"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_thumb"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/product_preview_icon_1"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FFF"
+        />
+
+    <me.zhanghai.android.materialratingbar.MaterialRatingBar
+        android:id="@+id/user_rating"
+        style="@style/Widget.MaterialRatingBar.RatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxHeight="20dp"
+        android:minHeight="20dp"
+        android:layout_marginStart="16dp"
+        android:rating="3.3"
+        app:layout_constraintStart_toEndOf="@+id/user_thumb"
+        app:layout_constraintTop_toTopOf="@+id/user_thumb"
+        app:mrb_fillBackgroundStars="true"
+        app:mrb_progressTint="@color/rating_color" />
+
+    <TextView
+        android:id="@+id/user_review"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the changes."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/user_rating"
+        app:layout_constraintTop_toBottomOf="@+id/user_rating" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/inter"
+        android:text="Kristin Watson"
+        android:textAlignment="textStart"
+        android:textColor="#9C27B0"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/user_review"
+        app:layout_constraintTop_toBottomOf="@+id/user_review" />
+
+    <TextView
+        android:id="@+id/review_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="March 14, 2021"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/user_name"
+        app:layout_constraintTop_toBottomOf="@+id/user_name" />
+</androidx.constraintlayout.widget.ConstraintLayout>

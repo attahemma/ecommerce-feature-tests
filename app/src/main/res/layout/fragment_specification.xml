@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SpecificationFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Product: Dried Hibiscus Flower\n\nOrigin: Nigeria
+        \n\nProduction process: Hand-picked and sorted
+        \n\nColor: Reddish Scarlet
+        \n\nMoisture content: 8%
+        \n\nForeign matter:  None, Free from salmonella
+        \n\nPacking: 25/50kg PP bag (or as desirable)"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textAlignment="textStart"
+        android:textSize="14sp"
+        />
+
+</LinearLayout>
